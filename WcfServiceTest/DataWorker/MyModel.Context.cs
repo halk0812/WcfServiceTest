@@ -31,10 +31,11 @@ namespace WcfServiceTest.DataWorker
     
         public virtual DbSet<data> data { get; set; }
     }
-    public class SampleInitial : DropCreateDatabaseAlways<MyDataBaseEntities>
+    public class SampleInitial : CreateDatabaseIfNotExists<MyDataBaseEntities>
     {
         protected override void Seed(MyDataBaseEntities context)
         {
+            
             List<data> myData = new List<data>();
             Random rd = new Random();
             for (int i = 0; i < 10; i++)
