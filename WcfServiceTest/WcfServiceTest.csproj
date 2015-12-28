@@ -71,9 +71,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MyDataBase.mdf" />
+    <Content Include="App_Data\MyDataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\MyDataBase_log.ldf">
       <DependentUpon>MyDataBase.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataWorker\MyModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
