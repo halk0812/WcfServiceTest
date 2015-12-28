@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest", "WcfServiceTest\WcfServiceTest.csproj", "{DA36DF5A-F640-4567-9349-B32572A1509A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "databaseCreate", "databaseCreate\databaseCreate.csproj", "{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest.Tests", "WcfServiceTest.Tests01\WcfServiceTest.Tests.csproj", "{59C640F4-B27B-4269-9FE5-F345B4A845AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA36DF5A-F640-4567-9349-B32572A1509A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA36DF5A-F640-4567-9349-B32572A1509A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA36DF5A-F640-4567-9349-B32572A1509A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA36DF5A-F640-4567-9349-B32572A1509A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
