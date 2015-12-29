@@ -14,7 +14,7 @@ namespace WcfServiceTest
     // ПРИМЕЧАНИЕ. Чтобы запустить клиент проверки WCF для тестирования службы, выберите элементы MyService.svc или MyService.svc.cs в обозревателе решений и начните отладку.
     public class MyWcfService : IMyService
     {
-        public static Logger _logFile;
+        public static Logger _logFile=LogManager.GetCurrentClassLogger();
         public string SendMessage(Message _input)
         {
             string _result = string.Empty;
