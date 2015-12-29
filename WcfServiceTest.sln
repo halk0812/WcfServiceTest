@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest", "WcfServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "databaseCreate", "databaseCreate\databaseCreate.csproj", "{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceTest.Tests", "WcfServiceTest.Tests01\WcfServiceTest.Tests.csproj", "{59C640F4-B27B-4269-9FE5-F345B4A845AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceInterface", "WcfServiceInterface\WcfServiceInterface.csproj", "{BF209F4D-24D8-44A2-ABC4-A40592D703E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4CF8AB-54EA-491B-BC4E-3C3D09247714}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59C640F4-B27B-4269-9FE5-F345B4A845AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF209F4D-24D8-44A2-ABC4-A40592D703E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF209F4D-24D8-44A2-ABC4-A40592D703E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF209F4D-24D8-44A2-ABC4-A40592D703E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF209F4D-24D8-44A2-ABC4-A40592D703E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

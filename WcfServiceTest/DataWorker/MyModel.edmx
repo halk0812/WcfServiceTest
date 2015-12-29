@@ -22,17 +22,17 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MyDataBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="data">
+        <EntityType Name="Subscriber">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="IdSubscriber" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdSubscriber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TypeEvent" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="email" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
-          <Property Name="sms" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="MyDataBaseEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="data" EntityType="Self.data" />
+          <EntitySet Name="data" EntityType="MyDataBaseModel.Subscriber" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -41,12 +41,12 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище MyDataBaseModelContainer" CdmEntityContainer="MyDataBaseEntities">
           <EntitySetMapping Name="data">
-            <EntityTypeMapping TypeName="MyDataBaseModel.data">
+            <EntityTypeMapping TypeName="MyDataBaseModel.Subscriber">
               <MappingFragment StoreEntitySet="data">
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdSubscriber" ColumnName="Id" />
                 <ScalarProperty Name="TypeEvent" ColumnName="TypeEvent" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="sms" ColumnName="sms" />
+                <ScalarProperty Name="Email" ColumnName="email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="sms" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

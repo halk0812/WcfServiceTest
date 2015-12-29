@@ -12,11 +12,11 @@ namespace WcfServiceTest.DataWorker
     using System;
     using System.Collections.Generic;
     
-    public partial class data
+    public partial class Subscriber
     {
-        public int Id { get; set; }
+        public int IdSubscriber { get; set; }
         public string TypeEvent { get; set; }
-        public string email { get; set; }
-        public string sms { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

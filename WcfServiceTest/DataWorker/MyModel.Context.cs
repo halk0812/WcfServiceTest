@@ -14,6 +14,7 @@ namespace WcfServiceTest.DataWorker
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Migrations;
+    using WcfServiceInterface;
 
     public partial class MyDataBaseEntities : DbContext
     {
@@ -28,29 +29,29 @@ namespace WcfServiceTest.DataWorker
         {
             throw new UnintentionalCodeFirstException();
         }
-    
-        public virtual DbSet<data> data { get; set; }
+
+        public virtual DbSet<Subscriber> data { get; set; }
     }
     public class SampleInitial : CreateDatabaseIfNotExists<MyDataBaseEntities>
     {
         protected override void Seed(MyDataBaseEntities context)
         {
-            
-            List<data> myData = new List<data>();
+
+            List<Subscriber> myData = new List<Subscriber>();
             Random rd = new Random();
             for (int i = 0; i < 10; i++)
             {
-                data temp = new data();
-                string te= ((TypeEvent)rd.Next(1, 3)).ToString("G");
+                Subscriber temp = new Subscriber();
+                string te = ((TypeEvent)rd.Next(1, 3)).ToString("G");
                 temp.TypeEvent = te;
-                temp.email = @"halk0812@yandex.ru";
-                temp.sms = "+79374023852";
+                temp.Email = @"halk0812@yandex.ru";
+                temp.PhoneNumber = "+79374023852";
                 myData.Add(temp);
             }
             context.data.AddRange(myData);
             context.SaveChanges();
-           // base.Seed(context);
+            
         }
     }
-   
+
 }
